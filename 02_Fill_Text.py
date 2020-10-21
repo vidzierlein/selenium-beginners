@@ -20,7 +20,7 @@ import time
 from selenium import webdriver
 
 # Create an instance of Firefox WebDriver
-driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 
 # The driver.get method will navigate to a page given by the URL
 driver.get("http://qxf2.com/selenium-tutorial-main")

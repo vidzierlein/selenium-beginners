@@ -18,7 +18,7 @@ SCOPE:
 from selenium import webdriver
 
 # Create an instance of Firefox WebDriver
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
 
 # KEY POINT: The driver.get method will navigate to a page given by the URL
 browser.get('http://qxf2.com/selenium-tutorial-main')

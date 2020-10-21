@@ -20,7 +20,7 @@ import time
 from selenium import webdriver
 
 # Create an instance of IE WebDriver
-driver = webdriver.Ie()
+driver = webdriver.Chrome()
 # Maximize the browser window
 driver.maximize_window()
 # Navigate to Qxf2 Tutorial page
@@ -35,7 +35,7 @@ time.sleep(3)
 # KEY POINT: Check if the validation mesage for name field
 try:
     driver.find_element_by_xpath("//label[text()='Please enter your name']")
-except Exception,e:
+except Exception:
     #This pattern of catching all exceptions is ok when you are starting out
     result_flag = False 
 else:

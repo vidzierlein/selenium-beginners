@@ -21,6 +21,7 @@ import time
 from selenium import webdriver
 
 #Notice this extra import statement!
+
 from selenium.webdriver.common.action_chains import ActionChains 
 
 # Create an instance of Firefox WebDriver

@@ -44,7 +44,7 @@ for i in xrange(0,len(rows)):
     result_data.append(cols_data)
 
 # Print the result list
-print result_data
+print(result_data)
 
 # Pause the script for 3 sec              
 time.sleep(3)
