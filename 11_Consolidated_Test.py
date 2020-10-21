@@ -40,11 +40,11 @@ rows = table.find_elements_by_xpath("//tbody/descendant::tr")
 result_data = []
 # Go to each row and get the no of columns and the navigate to column 
 # Then get the text from each column
-for i in xrange(0,len(rows)):
+for i in range(0,len(rows)):
     # Find no of columns by getting the td elements in each row
     cols = rows[i].find_elements_by_tag_name('td')
     cols_data = []
-    for j in xrange(0,len(cols)):
+    for j in range(0,len(cols)):
         # Get the text of each field 
         cols_data.append(cols[j].text.encode('utf-8'))           
     result_data.append(cols_data)
@@ -83,7 +83,7 @@ button.click()
 time.sleep(3)
 
 # Verify user is taken to Qxf2 tutorial redirect url
-if (driver.current_url== 'http://qxf2.com/selenium-tutorial-redirect'):
+if (driver.current_url == 'http://qxf2.com/selenium-tutorial-redirect'):
     print("Success")
 else:
     print("Failure")
