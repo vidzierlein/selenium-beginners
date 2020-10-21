@@ -11,7 +11,7 @@ AUTHOR: Avinash Shetty
 Contact: avinash@qxf2.com
 
 SCOPE:
-1) Launch Firefox driver
+1) Launch Chrome driver
 2) Navigate to Qxf2 Tutorial page
 3) Print the contents of the table
 4) Fill all the text fields
@@ -25,7 +25,7 @@ import time
 from selenium import webdriver
 
 # Create an instance of Firefox WebDriver
-driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 # Maximize the browser window
 driver.maximize_window()
 # Navigate to Qxf2 Tutorial page        
